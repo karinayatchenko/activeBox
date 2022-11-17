@@ -229,13 +229,24 @@ $color-red: #FF4343;
   width: calc((100% - 60px) / 3);
 }
 
-.employees__wrap {
-  display: flex;
+.employees{
   margin-bottom: 114px;
-  column-gap: 30px;
 
   @media (min-width:768px) and (max-width: 1024px) {
     margin-bottom: 78.41px;
+  }
+
+  @media (min-width:320px) and (max-width: 767px) {
+    margin-bottom: 34.39px;
+  }
+}
+
+.employees__wrap {
+  display: flex;
+
+  column-gap: 30px;
+
+  @media (min-width:768px) and (max-width: 1024px) {
     column-gap: 25.23px
   }
 
@@ -244,7 +255,6 @@ $color-red: #FF4343;
     align-items: center;
     flex-direction: column;
     row-gap: 60.56px;
-    margin-bottom: 34.39px;
   }
 }
 
@@ -252,25 +262,27 @@ $color-red: #FF4343;
   width: calc((100% - 90px) / 4);
 
   @media (min-width:320px) and (max-width: 767px) {
-    width: 100%
+    width: 100%;
   }
 }
 
 .employee__image-wrap {
-  width: 270px;
-  height: 270px;
-  margin: 0 auto 30px;
+  width: 100%;
+  margin-bottom:30px;
+  position: relative;
+
+  &::before{
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
 
   @media (min-width:768px) and (max-width: 1024px) {
-    width: 227.08px;
-    height: 227.08px;
-    margin: 0 auto 25.23px;
+    margin-bottom:  25.23px;
   }
 
   @media (min-width:320px) and (max-width: 767px) {
-    width: 280.08px;
-    height: 227.25px;
-    margin: 0 auto 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -278,22 +290,9 @@ $color-red: #FF4343;
   width: 100%;
   height: 100%;
   object-fit: contain;
-
-  @media (min-width:1024px) and (max-width: 1280px) {
-    width: 90%;
-    margin: 0 auto 25.23px;
-  }
-
-  @media (min-width:768px) and (max-width: 1023px) {
-    width: 80%;
-    margin: 0 auto 25.23px;
-  }
-
-  @media (min-width:320px) and (max-width: 767px) {
-    width: 280.08px;
-    height: 227.25px;
-    margin: 0 auto 25px;
-  }
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .employee__name {
@@ -350,8 +349,6 @@ $color-red: #FF4343;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
   color: #6C7279;
   margin-bottom: 37.86px;
 
