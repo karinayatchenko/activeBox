@@ -56,6 +56,9 @@
   color: #FFFFFF;
   margin-bottom: 82px;
 }
+.banner .banner__link {
+  text-decoration: none;
+}
 .banner .banner__btn {
   background: #FF4343;
   font-family: "Raleway", sans-serif;
@@ -389,20 +392,46 @@
 }
 
 .employee__social-icon {
-  width: 39px;
-  height: 39px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .employee__social-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .employee__social-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.employee__social-wrap {
+  width: 39px;
+  height: 39px;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .employee__social-wrap {
     width: 32.8px;
     height: 32.8px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .employee__social-icon {
+  .employee__social-wrap {
     width: 39.61px;
     height: 39.61px;
   }
+}
+
+.employee__social-wrap {
+  border: 1px solid #C6CBCD;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
