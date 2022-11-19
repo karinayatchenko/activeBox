@@ -63,9 +63,10 @@ $color-red: #FF4343;
     margin-bottom: 82px;
   }
 
-  .banner__link{
+  .banner__link {
     text-decoration: none;
   }
+
   .banner__btn {
     background: $color-red;
     font-family: $Raleway;
@@ -232,7 +233,7 @@ $color-red: #FF4343;
   width: calc((100% - 60px) / 3);
 }
 
-.employees{
+.employees {
   margin-bottom: 114px;
 
   @media (min-width:768px) and (max-width: 1024px) {
@@ -271,17 +272,17 @@ $color-red: #FF4343;
 
 .employee__image-wrap {
   width: 100%;
-  margin-bottom:30px;
+  margin-bottom: 30px;
   position: relative;
 
-  &::before{
+  &::before {
     content: '';
     display: block;
     padding-top: 100%;
   }
 
   @media (min-width:768px) and (max-width: 1024px) {
-    margin-bottom:  25.23px;
+    margin-bottom: 25.23px;
   }
 
   @media (min-width:320px) and (max-width: 767px) {
@@ -368,34 +369,36 @@ $color-red: #FF4343;
   }
 }
 
-.employee__social{
+.employee__social {
   display: flex;
 }
 
-.employee__social-container{
+.employee__social-container {
   display: flex;
   column-gap: 6px;
 
   @media (min-width:768px) and (max-width: 1024px) {
     column-gap: 5.05px;
   }
+
   @media (min-width:320px) and (max-width: 767px) {
     column-gap: 6.09px;
   }
 }
 
-.employee__social-icon{
+.employee__social-icon {
   width: 25px;
   height: 25px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,  -50%);
+  transform: translate(-50%, -50%);
 
   @media (min-width:768px) and (max-width: 1024px) {
     width: 18px;
     height: 18px;
   }
+
   @media (min-width:320px) and (max-width: 767px) {
     width: 25px;
     height: 25px;
@@ -403,7 +406,7 @@ $color-red: #FF4343;
 
 }
 
-.employee__social-wrap{
+.employee__social-wrap {
   width: 39px;
   height: 39px;
   position: relative;
@@ -412,6 +415,7 @@ $color-red: #FF4343;
     width: 32.8px;
     height: 32.8px;
   }
+
   @media (min-width:320px) and (max-width: 767px) {
     width: 39.61px;
     height: 39.61px;
@@ -419,16 +423,238 @@ $color-red: #FF4343;
 
 }
 
-.employee__social-wrap{
-  border:1px solid #C6CBCD
+.employee__social-wrap {
+  border: 1px solid #C6CBCD
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 114px;
+}
+
+.gallery__item {
+  flex: 25%;
+  max-width: 25%;
+  position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .gallery__item {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.gallery__img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__project {
+  position: absolute;
+  left: 20%;
+  top: 33.15%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery__project {
+    font-size: 18px;
+    line-height: 21px;
+    left: 20%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .gallery__project {
+    font-size: 18px;
+    line-height: 21px;
+    left: 10%;
+  }
+}
+
+.gallery__interface {
+  position: absolute;
+  left: 20%;
+  top: 53.15%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery__interface {
+    font-size: 14px;
+    line-height: 16px;
+    left: 20%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .gallery__interface {
+    font-size: 14px;
+    line-height: 16px;
+    left: 10%;
+  }
+}
+
+.quote {
+  margin-bottom: 31px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote  {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .quote {
+    margin-bottom: 23px;
+  }
+}
+
+.quote__container {
+  display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote__container  {
+    padding-bottom: 110px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .quote__container {
+    overflow: hidden;
+    flex-direction: column;
+    padding-bottom: 95ppx;
+  }
+}
+
+.quote__imageWrap {
+  width: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .quote__imageWrap {
+    width: 100%;
+  }
+}
+
+.quote__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote__wrap {
+  width: 50%;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  background-image: url(../images/BGquote2.jpg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote__wrap {
+    padding-top: 47px;
+    padding-bottom: 110px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .quote__wrap {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 95px;
+  }
+}
+
+.quote__title {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: left;
+  text-transform: capitalize;
+  max-width: 471px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote__title {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 330px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .quote__title {
+    max-width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+
+.quote__subtitle {
+  font-family: $Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: white;
+  max-width: 471px;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 330px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .quote__subtitle{
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
 
 @media (min-width:768px) and (max-width: 1024px) {
   .banner__title {
     font-size: 48px;
     line-height: 56px;
     margin-bottom: 61.86px;
-
   }
 
   .benefit__title {
