@@ -545,45 +545,36 @@ $color-red: #FF4343;
 
 .quote {
   margin-bottom: 31px;
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .quote {
-    margin-bottom: 24px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+      margin-bottom: 24px;
   }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .quote {
-    margin-bottom: 23px;
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+      margin-bottom: 23px;
   }
+  
 }
 
 .quote__container {
   display: flex;
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .quote__container {
-    padding-bottom: 110px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+      padding-bottom: 110px;
   }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .quote__container {
-    overflow: hidden;
-    flex-direction: column;
-    padding-bottom: 95ppx;
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+      overflow: hidden;
+      flex-direction: column;
+      padding-bottom: 95ppx;
   }
 }
 
 .quote__imageWrap {
   width: 50%;
-}
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .quote__imageWrap {
-    width: 100%;
+  @media (min-width: 320px) and (max-width: 767px) {
+      width: 100%;
   }
 }
 
@@ -598,20 +589,16 @@ $color-red: #FF4343;
   padding-top: 116px;
   padding-bottom: 116px;
   background-image: url(../images/BGquote2.jpg);
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .quote__wrap {
-    padding-top: 47px;
-    padding-bottom: 110px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+      padding-top: 47px;
+      padding-bottom: 110px;
   }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .quote__wrap {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 95px;
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 95px;
   }
 }
 
@@ -628,26 +615,23 @@ $color-red: #FF4343;
   margin: 0 auto;
   color: white;
   margin-bottom: 30px;
-}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .quote__title {
     font-size: 24px;
     line-height: 32px;
     max-width: 330px;
     margin-bottom: 30px;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .quote__title {
     max-width: 100%;
     margin-bottom: 30px;
     text-align: center;
     padding: 0 10px;
-  }
 }
 
+}
 
 .quote__subtitle {
   font-family: $Raleway;
@@ -661,23 +645,18 @@ $color-red: #FF4343;
   color: white;
   max-width: 471px;
   width: 100%;
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .quote__subtitle {
-    font-size: 12px;
-    line-height: 14px;
-    max-width: 330px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 14px;
+      max-width: 330px;
   }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+      max-width: 100%;
+      text-align: center;
+  } 
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .quote__subtitle {
-    max-width: 100%;
-    text-align: center;
-  }
-}
-
 
 @media (min-width:768px) and (max-width: 1024px) {
   .banner__title {
