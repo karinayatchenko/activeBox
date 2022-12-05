@@ -49,6 +49,20 @@ $color-red: #FF4343;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 31.43px;
+
+    @media (min-width:768px) and (max-width: 1024px) {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 42px;
+          margin-bottom: 32.71px;
+    }
+  
+    @media (min-width:320px) and (max-width: 767px) {
+      font-size: 48px;
+      line-height: 56px;
+      margin-bottom: 61.86px;
+    }
+    
   }
 
   .banner__subtitle {
@@ -1017,17 +1031,7 @@ line-height: 16px;
   color: white;
 }
 
-.footer__crWrap{
-  // max-width: 370px;
-  // width: 100%;
-}
-
 @media (min-width:768px) and (max-width: 1024px) {
-  .banner__title {
-    font-size: 48px;
-    line-height: 56px;
-    margin-bottom: 61.86px;
-  }
 
   .benefit__title {
     font-size: 18px;
@@ -1086,11 +1090,6 @@ line-height: 16px;
 }
 
 @media (min-width:320px) and (max-width: 767px) {
-  .banner__title {
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 32.71px;
-  }
 
   .header__menu {
     position: fixed;
